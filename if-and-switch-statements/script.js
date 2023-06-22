@@ -37,7 +37,7 @@ console.log(oddEven(10));
 function oldYoung(n) {
   let result;
 
-  switch (n) {
+  switch (true) {
     case typeof n === "string":
       result = "invalid parameter";
       break;
