@@ -38,9 +38,9 @@ function oldYoung(n) {
   let result;
 
   switch (n) {
-    /* case typeof n === "string":
+    case typeof n === "string":
       result = "invalid parameter";
-      break; */
+      break;
     case n <= 0:
       result = "invalid parameter";
       break;
