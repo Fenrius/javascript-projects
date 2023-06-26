@@ -23,13 +23,19 @@ console.log(oddNumbers(9, 12));
 // result should be: 9,11
 
 function charCount(a, b) {
+  if (b.length !== 1) {
+    return;
+  }
   let result = 0;
+
   for (let index = 0; index < a.length; index++) {
     const element = a[index];
+    element.toLowerCase;
     if (element === b) {
       ++result;
     }
   }
+
   return result;
 }
 
