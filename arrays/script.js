@@ -1,9 +1,9 @@
 function removeItem(a, b) {
-  if (a !== "a" && b !== "b") {
-    modifieda = [...a];
+  if (b !== undefined) {
+    modifiedA = [...a];
     --b;
-    modifieda.splice(b, 1);
-    return modifieda;
+    modifiedA.splice(b, 1);
+    return modifiedA;
   } else {
     return a;
   }
