@@ -1,13 +1,15 @@
 function oddNumbers(Start, End) {
-  const oddN = [];
-  for (let index = Start; index < End; index++) {
+  let oddN = "";
+  for (let index = Start; index <= End; index++) {
     if (index % 2 !== 0 && index !== -Math.abs(index)) {
-      oddN.push(index);
+      if (oddN === "") {
+        oddN += index;
+      } else {
+        oddN += "," + index;
+      }
     }
   }
-  if (End % 2 !== 0) {
-    oddN.push(End);
-  }
+
   return oddN;
 }
 
